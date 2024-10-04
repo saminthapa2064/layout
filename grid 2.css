@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+   body{ 
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+  }
+
+  body>*{
+    border: 3px solid red;
+    padding: 15px;
+    border-radius: 7px;
+    height: 50vh;
+  }
+
+  body div:first-child{
+    grid-column: 2/span 4;
+ }
+
+ body div:last-child{
+    grid-column:6/span 6;
+ }
